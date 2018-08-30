@@ -1,4 +1,8 @@
 package demo.base.bean;
 
-public class BaseBean {
+/**
+ * 抽象基类
+ */
+public abstract class BaseBean {
+    public abstract void hello();
 }

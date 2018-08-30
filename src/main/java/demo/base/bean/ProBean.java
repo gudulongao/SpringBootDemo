@@ -1,4 +1,11 @@
 package demo.base.bean;
 
-public class ProBean {
+/**
+ * 正式bean
+ */
+public class ProBean extends BaseBean {
+    @Override
+    public void hello() {
+        System.out.println("pro hello");
+    }
 }
