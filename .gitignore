@@ -1,5 +1,7 @@
 #idea目录
 .idea
+#target目录
+target
 #classpath
 .classpath
 
