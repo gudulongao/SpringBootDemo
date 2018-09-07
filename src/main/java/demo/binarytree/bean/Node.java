@@ -1,5 +1,9 @@
 package demo.binarytree.bean;
 
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 节点信息
  */
@@ -21,6 +25,11 @@ public class Node {
 
     public Node(){
 
+    }
+
+    public static void main(String[] args) {
+        Map<String,String> map = new HashMap<>();
+        map = Collections.synchronizedMap(map);
     }
 
     public int getValue() {

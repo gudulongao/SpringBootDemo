@@ -115,16 +115,23 @@ public class BinaryTree {
     }
 
     /**
-     * 先序遍历
+     * 先序遍历(递归)
      *
      * @param curr
      */
-    public void preTraverse(Node curr) {
+    private void preTraverseRecursion(Node curr) {
         if (curr != null) {
             System.out.print(curr.getValue() + " ");
-            preTraverse(curr.getLeft());
-            preTraverse(curr.getRight());
+            preTraverseRecursion(curr.getLeft());
+            preTraverseRecursion(curr.getRight());
         }
+    }
+
+    /**
+     * 先序遍历（递归）
+     */
+    public void preTraverseRecursion(){
+        preTraverseRecursion(root);
     }
 
     /**
@@ -184,7 +191,7 @@ public class BinaryTree {
         tree.middleTraverseRecursion();
         System.out.println();
         System.out.print("pre traverse:");
-        tree.preTraverse(tree.root);
+        tree.preTraverseRecursion(tree.root);
         System.out.println();
         System.out.println("max value:" + tree.findMax());
         System.out.println("min value:" + tree.findMin());
