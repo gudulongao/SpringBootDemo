@@ -14,7 +14,8 @@ public class DemoAllAware implements ApplicationContextAware {
         this.context = applicationContext;
     }
 
-    public void test(){
-
+    public void test() {
+        System.out.println("applictionName: " + context.getApplicationName());
+        System.out.println("displayName: " + context.getDisplayName());
     }
 }
