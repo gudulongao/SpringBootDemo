@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
+<configuration debug="true" scan="true" scanPeriod="1 seconds">
+    <contextName>logback</contextName>
     <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
-        <!--定义了一个过滤器,在LEVEL之下的日志输出不会被打印出来-->
         <encoder>
             <pattern>%d [%thread] %-5level %logger{36} [%file : %line] - %msg%n</pattern>
         </encoder>
     </appender>
     　　　
+    <!--root是默认的logger 这里设定输出级别是debug-->
     <root level="debugger">
+        <!--定义了两个appender，日志会通过往这两个appender里面写-->
         <appender-ref ref="stdout"/>
     </root>
+
 </configuration>
