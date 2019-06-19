@@ -20,6 +20,6 @@ public class MVCIntereceptor extends HandlerInterceptorAdapter {
 
     @ModelAttribute
     public void addAttributes(Model model) {
-        model.addAttribute("msg", "testMsg");
+//        model.addAttribute("msg", "testMsg");
     }
 }
