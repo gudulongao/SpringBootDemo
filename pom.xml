@@ -27,7 +27,7 @@
         <!-- fastjson -->
         <fastjson.version>1.2.38</fastjson.version>
         <!-- fileupload -->
-        <fileupload.version>1.3.1</fileupload.version>
+        <fileupload.version>1.3.3</fileupload.version>
         <!-- common-io -->
         <commonio.version>2.3</commonio.version>
         <junit.version>4.11</junit.version>
